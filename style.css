@@ -43,7 +43,6 @@ body {
   }
   
   .jumbotron-text {
-    /*TAGLINE UNDER NAME*/
     font-weight: 400;
     font-size: 2em;
     color: white;
@@ -52,7 +51,6 @@ body {
   }
   
   .jumbotron-text h1 {
-    /*YOUR NAME*/
     text-transform: uppercase;
     font-weight: 800;
     font-size: 3em;
@@ -182,7 +180,6 @@ body {
   
   /*PROJECTS*/
 
-  /* Add styles for the see more button */
 .see-more-btn {
     display: block;
     margin: 0 auto;
@@ -194,27 +191,23 @@ body {
     cursor: pointer;
   }
 
-/* Styles for the arrow icon */
 .arrow {
     display: inline-block;
-    transition: transform 0.3s ease; /* Add transition effect for rotation */
+    transition: transform 0.3s ease;
   }
   
-  /* Add styles for flipping the arrow icon when the see more section is shown */
   .show .arrow {
-    transform: rotate(180deg); /* Rotate the arrow when the see more section is visible */
+    transform: rotate(180deg);
   }
   
-  /* Add styles for the see more section */
   #see-more-section {
     margin-top: 20px;
-    opacity: 0; /* Initially hide the section */
-    transition: opacity 0.5s ease; /* Add transition effect for opacity */
+    opacity: 0;
+    transition: opacity 0.5s ease;
   }
   
-  /* Add styles for the see more section when it's visible */
   #see-more-section.show {
-    opacity: 1; /* Show the section */
+    opacity: 1;
   }
 
   .project-card {
