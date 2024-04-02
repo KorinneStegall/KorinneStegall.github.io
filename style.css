@@ -8,6 +8,10 @@ body {
     box-sizing: border-box
   }
   
+  h4 {
+    font-weight: 400;
+    font-size: large;
+  }
   /*NAVBAR*/
   .navbar {
     background-color: #31b0d5;
