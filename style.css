@@ -8,10 +8,6 @@ body {
     box-sizing: border-box
   }
   
-  h4 {
-    font-weight: 400;
-    font-size: large;
-  }
   /*NAVBAR*/
   .navbar {
     background-color: #31b0d5;
@@ -212,6 +208,7 @@ body {
   h4 {
     margin: 0;
     font-weight: 400;
+    font-size: larger;
     color: grey;
   }
   
@@ -219,6 +216,27 @@ body {
     float: right;
   }
   
+  .certifications-container {
+    text-align: left; /* left-align the content */
+    margin-top: 20px; /* Add some space between the job title and certifications */
+}
+
+  .certifications {
+    display: flex;
+    flex-wrap: wrap; /* Allow badges to wrap if they exceed the container width */
+    justify-content: left; /* left-align the badges */
+    gap: 20px; /* Adjust the spacing between badges */
+}
+
+  .cert-badge {
+    flex: 0 0 auto;
+    width: 150px; /* Set the width of each badge */
+    height: 150px; /* Set the height of each badge */
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+
   /*PROJECTS*/
 
 .see-more-btn {
@@ -269,20 +287,18 @@ body {
     display: block;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    width: 250px;
+    height: 350px;
   }
   
   .project-content {
     flex: 1 1 auto;
     padding: 1.25rem;
-  
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
   }
   
   /*SKILLS*/
   .ul-skills {
-    text-align: center;
+    text-align: left;
     padding-left: 0;
   }
   
