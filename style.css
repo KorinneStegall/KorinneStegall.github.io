@@ -217,24 +217,33 @@ body {
   }
   
   .certifications-container {
-    text-align: left; /* left-align the content */
+    text-align: left; /* Center-align the content */
     margin-top: 20px; /* Add some space between the job title and certifications */
-}
-
+  }
+  
   .certifications {
     display: flex;
     flex-wrap: wrap; /* Allow badges to wrap if they exceed the container width */
-    justify-content: left; /* left-align the badges */
+    justify-content: center; /* Center-align the badges */
     gap: 20px; /* Adjust the spacing between badges */
-}
-
+  }
+  
   .cert-badge {
     flex: 0 0 auto;
-    width: 150px; /* Set the width of each badge */
-    height: 150px; /* Set the height of each badge */
+    width: 150px; /* Set the width of each badge container */
+    height: 150px; /* Set the height of each badge container */
     overflow: hidden;
     margin-top: 20px;
-}
+    display: flex; /* Align badge content vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cert-badge img {
+    max-width: 100%; /* Ensure badge images maintain aspect ratio */
+    max-height: 100%; /* Ensure badge images maintain aspect ratio */
+  }
+  
 
 
   /*PROJECTS*/
